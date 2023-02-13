@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE apple [
+    <!ELEMENT apple (iphone3gs*)>
+    <!ELEMENT iphone3gs (model, price, desc)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT desc (#PCDATA)>
+]>
+
+<apple> 
+    <iphone3gs>
+        <model>iPhone 3gs</model>
+        <price>345</price>
+        <desc>abc</desc>
+    </iphone3gs>
+    <iphone3gs>
+        <model>iPhone 3gs</model>
+        <price>345</price>
+        <desc>abc</desc>
+    </iphone3gs>
+    <iphone3gs>
+        <model>iPhone 3gs</model>
+        <price>345</price>
+        <desc>abc</desc>
+    </iphone3gs>
+    <iphone3gs>
+        <model>iPhone 3gs</model>
+        <price>345</price>
+        <desc>abc</desc>
+    </iphone3gs>
+</apple>
