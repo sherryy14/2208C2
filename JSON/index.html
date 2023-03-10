@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let obj = {
+            title: "ABC",
+            decs: "Decs",
+            price: 123
+        }
+
+        let car = {
+            honda: {
+                civic: {
+                    brand: "Honda",
+                    model: "Type R",
+                    colors: ['white', 'red', 'pink']
+                },
+                city: {
+                    brand: "Honda",
+                    model: "Type C"
+                },
+            },
+            mehran: {
+                abc:{
+                    cd: {
+
+                    }
+                }
+            }
+        }
+        
+
+
+        let problem = {
+            "problems": [{
+                "Diabetes": [{
+                    "medications": [{
+                        "medicationsClasses": [{
+                            "className": [{
+                                "associatedDrug": [{
+                                    "name": "Asprin", "dose": "", "strength": "500 mg"
+                                }]
+                            }]
+                        }]
+                    }]
+                }]
+            }
+        ]
+        }
+
+        console.log(car.honda.civic.colors[2])
+        console.log(problem.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name)
+
+
+        let products = [
+            {
+                "stdName" :"Maaz",
+                age : 24
+
+            },
+            {
+                stdName :"Ahmed",
+                age : 24
+            },
+            {
+                stdName :"Raza",
+                age : 24
+            },
+            {
+                stdName :"Raza",
+                age : 24
+            },
+            {
+                stdName :"Raza",
+                age : 24
+            },
+            {
+                stdName :"Raza",
+                age : 24
+            },
+            {
+                stdName :"Raza",
+                age : 24
+            }
+        ]
+     
+        // console.log(products[1].stdName)
+        products.forEach(e => {
+            document.write(`
+                Std Name: ${e.stdName} <br>
+                Age: ${e.age} <br>
+            `)
+        });
+    </script>
+</body>
+
+</html>
