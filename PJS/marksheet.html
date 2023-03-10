@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sID = +prompt("Enter your student ID");
+      let eng = +prompt("Enter your eng marks");
+      let urdu = +prompt("Enter your urdu marks");
+      let math = +prompt("Enter your math marks");
+      let phy = +prompt("Enter your phy marks");
+      let comp = +prompt("Enter your comp marks");
+
+      let obtained_marks = eng + urdu + math + phy + comp;
+      let perc = (obtained_marks / 500) * 100;
+
+      // document.write("Student Name: Adnan <br>"+ "Obtained Marks:" +obtained_marks + "<br>Percentage:"+ perc + "%" )
+      switch (sID) {
+        case 1:
+          document.write(`Student Name: Adnan <br>
+                    Obtained Marks: ${obtained_marks} <br>
+                    Percentage: ${perc} % <br>
+                `);
+          if (perc >= 80 && perc <= 100) {
+            document.write("A+");
+          } else if (perc >= 70 && perc < 80) {
+            document.write("A");
+          } else if (perc >= 60 && perc < 70) {
+            document.write("B");
+          } else if (perc < 60) {
+            document.write("Fail");
+          } else {
+            document.write("Incorrect Input");
+          }
+          break;
+      }
+    </script>
+  </body>
+</html>
