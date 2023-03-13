@@ -7,65 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
-
     <script>
-        var a = 5
-        var a =6
+        for(let i =0; i<=10; i = i+2){
+            console.log(i);
+        }
 
-        console.log(a);
+        let table = +prompt("Enter Table No.",2)
+        let n = +prompt("Enter Table Length: ",10)
 
-        let b = 5
-        b =8
+        for(let t =1 ; t<=n; t++){
+            // console.log(table*t);
+            document.write(`${table} x ${t} = ${table*t} <br>`)
+        }
 
-        console.log(b);
-
-        const c = 5
-        
-
-         console.log(a);
-
-
-         let age = 40
-
-         if(!(age >= 18 && age<=50)){
-            document.write('Eligible for CNIC')
-        }else{
-             document.write('Not Eligible for CNIC')
-         }
-
-        //  let marks = +prompt("Enter your marks")
-
-        //  if(marks>= 80 && marks <=100 ){
-        //     document.write("A+")
-        // }else if(marks >= 70  && marks <80){
-        //      document.write("A")
-        //     }else if(marks >=60 && marks<70){
-        //      document.write("B")
-        //     }else if(marks<60){
-        //      document.write("Fail")
-        //     }else{
-        //      document.write("Incorrect Input")
-        //  }
-
-         document.write("<br><br>")
-         let newAge = 55
-
-
-
-         if(newAge >= 18 && newAge <=50){
-            let gender = 'fsd'
-            if(gender === 'm' ){
-                document.write("Male")
-            }else{
-                document.write("Female")
+        for(let c=0 ; c<=5; c++){
+            for(let r=0; r<=5;r++){
+                document.write("*")
             }
-         }else{
-            document.write("Invalid Result")
-         }
-
-
- 
+            document.write("<br>")
+        }
+        // document.write(String.fromCharCode(65))
     </script>
 </body>
 </html>
